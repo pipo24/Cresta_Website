@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CrestaWebsite</title>
+  <title>Cresta Run</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -16,7 +16,7 @@
 
 <!-- footer -->
 <footer>
-  
+  <%= render partial: 'shared/logged_out_footer' %>
 </footer>
 
 </body>

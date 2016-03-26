@@ -1,3 +1,10 @@
+// Outside styles
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// Layouts
 @import "layout";
+
+// Components
+@import "components/hero";
+@import "components/footer";

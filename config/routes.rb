@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   root 'front#home'
 
   get '/about', to: 'front#about'
+  get '/members', to: 'back#members'
 
 end

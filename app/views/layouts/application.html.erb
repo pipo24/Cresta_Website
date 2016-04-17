@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Cresta Run</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<header>
+  <head>
+    <title>Cresta Run</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <%= render partial: 'shared/logged_out_nav' %>
+    </header>
 
+    <%= yield %>
 
-</header>
-
-<%= yield %>
-
-<!-- footer -->
-<footer>
-  <%= render partial: 'shared/logged_out_footer' %>
-</footer>
-
-</body>
+    <!-- footer -->
+    <footer>
+      <%= render partial: 'shared/logged_out_footer' %>
+    </footer>
+  </body>
 </html>

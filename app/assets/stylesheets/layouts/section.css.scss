@@ -1,0 +1,35 @@
+.section-wrapper {
+  padding: 70px 0;
+  &.tiny{
+    padding: 10px 0;
+  }
+}
+.gray-section {
+  background-color: gray;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.section-wrapper.padded-section {
+  padding: 140px 0;
+}
+
+.top-padding-30{
+  padding-top: 30px;
+}
+
+.bottom-padding-30{
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper{
+    padding: 20px 0;
+  }
+  .section-wrapper.padded-section {
+    padding: 70px 0 40px;
+  }
+}
+

@@ -4,6 +4,8 @@ body { padding-top: 60px; }
   border-bottom: 5px solid #A90C36;
   .navbar-brand{
     padding: 0;
+    margin-left: -10px;
+    margin-right: 5px;
     img{ 
       height: 110px;
     }
@@ -16,7 +18,7 @@ body { padding-top: 60px; }
       a{
         padding: 15px 10px;
       }
-      &.active a{
+      &.current-page a{
         background-color: #A90C36;
         color: #fff;
         background-image: none;
@@ -31,12 +33,13 @@ body { padding-top: 60px; }
         border: 0;
         box-shadow: none;
         padding-bottom: 0;
+        min-width: 150px;
         li:first-of-type{
           border-top: 5px solid #A90C36;
         }
         li > a{
           color: #fff;
-          width: 160px;
+          width: 150px;
           white-space: pre-wrap;
           text-align: center;
           padding: 5px 20px;
@@ -73,7 +76,7 @@ body { padding-top: 60px; }
 
 @media (min-width: 768px){
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
-    margin-left: 0;
+    margin-left: -10px;
   }
 }
 

@@ -1,3 +1,10 @@
+footer{
+  border-top: 5px solid #A90C36;
+  .footer-yellow-line{
+    margin: 0;
+    border-top: 5px solid #D99A40;
+  }
+}
 .footer-links{
   width: 100%;
   margin: 0 auto;
@@ -6,6 +13,6 @@
   text-align: center;
   li{
     display: inline-block;
-    padding: 10px; 
+    padding: 25px; 
   }
 }

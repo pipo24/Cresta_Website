@@ -1,3 +1,23 @@
 .hero-image{
+  position: relative;
   width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .hero-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    display: table;
+    text-align: center;
+    color: #A90C36;
+    font-weight: 800;
+    font-size: 45px;
+  }
+  &.contacts-hero{
+    background-image: image-url("heros/contacts-hero")
+  }
 }

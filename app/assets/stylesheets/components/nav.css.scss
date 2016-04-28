@@ -37,12 +37,16 @@ body { padding-top: 60px; }
         li:first-of-type{
           border-top: 5px solid #A90C36;
         }
+        li.current-page > a{
+          background-color: #A90C36;
+        }
         li > a{
           color: #fff;
           width: 150px;
           white-space: pre-wrap;
           text-align: center;
           padding: 5px 20px;
+          background-color: #D99A40;
           &:hover{
             background-color: #A90C36;
             background-image: none;

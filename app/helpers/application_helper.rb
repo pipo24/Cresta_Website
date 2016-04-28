@@ -25,5 +25,24 @@ module ApplicationHelper
     ''
   end
 
+  def set_current_item_by_controller_and_action_by_array when_selected_hash_array
+    when_selected_hash_array.each do |when_selected_hash|
+      if when_selected_hash[:controller] == params[:controller] and when_selected_hash[:action] == params[:action]
+        return 'current-page'
+      end
+    end
+    ''
+  end
+
+  def about_dropdown_hash_array
+    [
+      {controller: "home", action: 'about'},
+      {controller: "home", action: 'history'},
+      {controller: "home", action: 'faqs'},
+      {controller: "home", action: 'useful_links'},
+      {controller: "home", action: 'supporters'}
+    ]
+  end
+
 
 end

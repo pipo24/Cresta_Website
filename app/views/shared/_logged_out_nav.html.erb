@@ -18,14 +18,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="<%= set_current_page_by_controller_and_action({controller: "home", action: "home"}) %>"><%= link_to "HOME", root_path %></li>
-        <li class="dropdown">
+        <li class="dropdown <%= set_current_item_by_controller_and_action_by_array(about_dropdown_hash_array) %>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT THE SMTC<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">HISTORY OF THE CLUB</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">SUPPORTERS & THANK YOUS</a></li>
+            <li class="<%= set_current_page_by_controller_and_action({controller: "home", action: "history"}) %>"><%= link_to "HISTORY OF THE CLUB", history_path %></li>
+            <li class="<%= set_current_page_by_controller_and_action({controller: "home", action: "faqs"}) %>"><%= link_to "FAQs", faqs_path %></li>
+            <li class="<%= set_current_page_by_controller_and_action({controller: "home", action: "supporters"}) %>"><%= link_to "SUPPORTERS & THANK YOUS", supporters_path %></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">USEFUL LINKS</a></li>
+            <li class="<%= set_current_page_by_controller_and_action({controller: "home", action: "useful_links"}) %>"><%= link_to "USEFUL LINKS", useful_links_path %></li>
           </ul>
         </li>
 

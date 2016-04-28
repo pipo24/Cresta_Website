@@ -5,7 +5,14 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#home'
 
-  get '/contacts', to: 'home#contacts'
+  # Not Logged in ROUTES
+  get :about, to: 'home#about'
+  get :history, to: 'home#history'
+  get :faqs, to: 'home#faqs'
+  get :supporters, to: 'home#supporters'
+  get :'useful-links', to: 'home#useful_links'
+  get :contacts, to: 'home#contacts'
 
-  get '/members', to: 'back#members'
+  # Logged in ROUTES
+  get :members, to: 'back#members'
 end

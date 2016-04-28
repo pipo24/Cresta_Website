@@ -42,7 +42,7 @@ body { padding-top: 60px; }
         }
         li > a{
           color: #fff;
-          width: 150px;
+          width: 155px;
           white-space: pre-wrap;
           text-align: center;
           padding: 5px 20px;
@@ -79,8 +79,16 @@ body { padding-top: 60px; }
 }
 
 @media (max-width: 860px){
-  .navbar-default .navbar-nav li a{
-    font-size: 11px;
+  .navbar-default .navbar-nav{
+    li a{
+      font-size: 11px;
+    }
+    li .dropdown-menu{
+      min-width: 128px;
+      li > a{
+        width: 128px;
+      }
+    }
   }
 }
 
@@ -97,6 +105,12 @@ body { padding-top: 60px; }
     img{
       height: 49px;
       margin-left: 10px;
+    }
+  }
+  .navbar-default .navbar-nav li .dropdown-menu{
+    min-width: 0;
+    li > a{
+      width: 100%;
     }
   }
 }
